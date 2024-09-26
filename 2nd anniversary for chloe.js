@@ -1,3 +1,4 @@
+87% of storage used … If you run out, you can't create, edit and upload files. Get 100 GB of storage for RM 8.49 RM 2.15/month for 2 months.
 // script.js
 
 // Function to handle button click events
@@ -47,7 +48,7 @@ function displayCat() {
     // Create a new Image element for the cat
     var catImage = new Image();
     // Set the source (file path) for the cat image
-    catImage.src = 'mocha-bear-hearts.gif'; // Assuming the cat image is named "cat.gif"
+    catImage.src = 'mocha-bears-love.gif'; // Assuming the cat image is named "cat.gif"
     // Set alternative text for the image (for accessibility)
     catImage.alt = 'Cat';
     // When the cat image is fully loaded, add it to the image container
