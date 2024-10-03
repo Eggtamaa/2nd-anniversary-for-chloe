@@ -1,0 +1,269 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Fallback font family */
+    text-align: center; /* Center-align text */
+    margin: 0; /* Remove default margin */
+    background-color: #FADADD; /* Set background color to light pink */
+}
+
+#container {
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align items horizontally */
+    justify-content: center; /* Center-align items vertically */
+    height: 100vh; /* Make the container full viewport height */
+    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the question */
+    font-size: 52px; /* Set font size for the question */
+}
+
+#container2 {
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align items horizontally */
+    justify-content: center; /* Center-align items vertically */
+    height: 100vh; /* Make the container full viewport height */
+    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the question */
+    font-size: 52px; /* Set font size for the question */
+}
+
+#redButton img {
+    cursor: pointer;
+    display: fixed;
+    z-index: 2;
+}
+
+#envelopeButton img{
+    position: absolute;
+    bottom: 45px;
+    right: 45px;
+}
+
+#image-container {
+    /* This container will hold the images */
+}
+
+#question0 {
+    font-family: 'Sofia', sans-serif; /* Apply Sacramento font to the question */
+    font-size: 50px; /* Set font size for the question */
+    
+}
+
+
+#question {
+    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the question */
+    font-size: 50px; /* Set font size for the question */
+    color: red;
+
+}
+
+#question2 {
+    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the question */
+    font-size: 100px; /* Set font size for the question */
+}
+
+#clickme {
+    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the question */
+    font-size: 30px; /* Set font size for the question */
+    position:relative;
+    bottom: 37px;
+}
+
+#envelopeText{
+    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the question */
+    font-size: 30px; /* Set font size for the question */
+    position:absolute;
+    bottom: 1px;
+    right:44px;
+}
+
+
+#options {
+    margin-top: 20px; /* Add space above the options */
+}
+
+button {
+    padding: 10px 20px; /* Set padding for buttons */
+    margin: 0 10px; /* Set margin around buttons */
+    font-size: 50px; /* Set font size for buttons */
+    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the options */
+    background-color: #FB607F; /* Set button background color */
+    color: white; /* Set text color to white */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Set cursor to pointer on hover */
+}
+
+
+#textcontainer {
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align items horizontally */
+    justify-content: center; /* Center-align items vertically */
+    height: 100vh; /* Make the container full viewport height */
+}
+
+
+.wrapper{
+    display: absolute;
+}
+
+
+#reason {
+    position: relative;
+    font-weight: 500;
+    font-family: "Sofia", sans-serif;
+    font-size: clamp(35px, 2.7vw, 75px);
+    color: #FADADD;
+    white-space: nowrap;
+    text-shadow: 1px 2px 2px #FADADD;
+}
+
+#reason2{
+    position:absolute;
+    white-space: nowrap;
+    height:1px;
+    width:1px;
+    font-weight: 500;
+    font-family: "Sofia", sans-serif;
+    font-size: clamp(40px, 2.5vw, 70px);
+    color: white;
+    text-shadow: 2px 2px 7px black;
+}
+
+.dynamic-text{
+    position: relative;
+}
+.dynamic-text ::before{
+    position: absolute;
+    content : "";
+    left : 0;
+    height : 100%;
+    width : 100%;
+    border-left: 1px solid white;
+    background-color: #FADADD;
+}
+
+.typing{
+    animation: typing 1.5s forwards;   
+}
+
+
+@keyframes typing{
+    0%,
+    10%{
+        left: 0;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+.Section_top{
+    position: absolute;
+    z-index: -2;
+    top:150px;
+    width: 480px;
+    height: 270px;
+    overflow: hidden;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    animation: change 49s infinite ease-in-out;
+}
+
+@keyframes change{
+    0%
+    {
+        background-image: url(pic1.jpg);
+    }
+
+    10%
+    {
+        background-image: url(pic2.jpg);
+    }
+
+    20%
+    {
+        background-image: url(pic3.jpg);
+    }
+
+    30%
+    {
+        background-image: url(pic6.jpg);
+    }
+
+    40%
+    {
+        background-image: url(pic16.jpg);
+    }
+
+    50%
+    {
+        background-image: url(pic13.jpg);
+    }
+
+    60%
+    {
+        background-image: url(pic14.jpg);
+    }
+
+    70%
+    {
+        background-image: url(pic11.jpg);
+    }
+
+    80%
+    {
+        background-image: url(pic15.jpg);
+    }
+
+    90%
+    {
+        background-image: url(pic12.jpg);
+    }
+
+    100%
+    {
+        background-image: url(pic7.jpg);
+    }
+}
+
+.tv {
+    background-image: url("tv.png"); /* Ensure this path is correct */
+    position: absolute; /* Use absolute positioning */
+    z-index: -1; /* Ensure this is behind other content */
+    left: 320px;
+    top:-420px;
+    width: 1400px;
+    height: 1400px;
+    background-size: cover; /* Cover the entire div area */
+    background-position: center; /* Center the background image */
+    transform: scale(0.41); /* Remove scaling to ensure visibility */
+}
+
+.roboto{
+    font-family: "Roboto Mono", monospace;
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align items horizontally */
+    justify-content: center; /* Center-align items vertically */
+    height: 100vh; /* Make the container full viewport height */
+    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the question */
+    font-size: 35px; /* Set font size for the question */
+    margin: 0 50px;
+}
+
+.bordered-image {
+    border: 5px solid white; /* 2px border, solid style, black color */
+    padding: 1px; /* Optional: Space between the image and the border */
+    border-radius: 5px; /* Optional: Rounded corners */
+    width:520px; 
+    height:390px;
+}
